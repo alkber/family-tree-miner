@@ -30,13 +30,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * This is a classic map reduce problem. There is a starting subject, first all the children of the
- * subject are taken and split into different thread of execution to compute the daughter count
- * of each children of the starting subject. For each children so taken, their children are taken
- * next and split into the different thread of execution.
+ * This is a classic map reduce problem. There is a starting subject, first all the daughters and
+ * daughter in laws of subject are taken and split into different thread of execution to compute
+ * the (child) daughter count of each  of the starting subject. For each daughter/daughter in law
+ * so taken, their daughters and daughter in laws are taken next and split into the different thread
+ * of execution.
  * <p>
  * They all update a thread safe variable for the daughter count and list of subjects subject
- * associated with that count. Finally when all the children in the family tree are considered,
+ * associated with that count. Finally when all the daughters in the family tree are considered,
  * we will have highest value for count of the daughters. This count is used to map out set of
  * subjects having same highest count of daughters.
  * <p>

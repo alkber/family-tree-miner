@@ -110,7 +110,7 @@ shell > Person=Jnki;Relation=GrandChildren
 //count granddaughter who has most daughters
 //a draw result
 shell > #Daughter=Shan;
- Draw Result [{f} Satya, {m} Vich, {m} Drita, {m} Vila, {f} Lavnya] 1 daughters  each.
+ Draw Result [{f} Jaya, {f} Jnki, {f} Satya, {f} Lika] 1 daughters  each.
 
 shell > Mother=Lavnya;Daughter=Rose
 Lavnya is now related to Rose as Mother
